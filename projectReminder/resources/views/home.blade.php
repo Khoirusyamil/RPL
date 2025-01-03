@@ -21,13 +21,6 @@
         <link href="{{asset('landing_page/css/bootstrap-icons.css')}}" rel="stylesheet">
 
         <link href="{{asset('landing_page/css/templatemo-ebook-landing.css')}}" rel="stylesheet">
-<!--
-
-TemplateMo 588 ebook landing
-
-https://templatemo.com/tm-588-ebook-landing
-
--->
     </head>
     
     <body>
@@ -36,7 +29,7 @@ https://templatemo.com/tm-588-ebook-landing
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="#">
                         <!-- <i class="navbar-brand-icon bi-book me-2"></i> -->
                         <span>Study Buddy</span>
                     </a>
@@ -50,7 +43,8 @@ https://templatemo.com/tm-588-ebook-landing
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_1">Home</a>
                             </li>
-    
+
+                            @guest
                             <li class="nav-item">
                                 <a class="nav-link click-scroll" href="#section_2">About</a>
                             </li>
@@ -64,8 +58,9 @@ https://templatemo.com/tm-588-ebook-landing
                             </li> -->
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contact</a>
+                                <a class="nav-link click-scroll" href="#section_4">Contact</a>
                             </li>
+                            @endguest
                         
 
                         @auth
@@ -101,7 +96,7 @@ https://templatemo.com/tm-588-ebook-landing
             </nav>
             
 
-            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <section class="hero-section d-flex justify-content-center align-items-center " id="section_1">
                 <div class="container">
                     <div class="row">
 
@@ -155,12 +150,12 @@ https://templatemo.com/tm-588-ebook-landing
                     </div>
                 </div>
             </section>
-
+            
 
             <section class="py-lg-5"></section>
 
-
-            <section class="book-section section-padding" id="section_2">
+            @guest
+            <section class="book-section section-padding mt-5" id="section_2">
                 <div class="container">
                     <div class="row">
 
@@ -184,8 +179,9 @@ https://templatemo.com/tm-588-ebook-landing
                     </div>
                 </div>
             </section>
+            @endguest
 
-
+            @auth
             <section>
                 <div class="container">
                     <div class="row">
@@ -383,9 +379,10 @@ https://templatemo.com/tm-588-ebook-landing
                     </div>
                 </div>
             </section>
+            @endauth
 
-
-            <section class="author-section section-padding" id="section_3">
+            @guest
+            <section class="author-section section-padding mb-5" id="section_3">
                 <div class="container">
                     <div class="row">
 
@@ -406,7 +403,7 @@ https://templatemo.com/tm-588-ebook-landing
                     </div>
                 </div>
             </section>
-
+            @endguest
 
             <!-- <section class="reviews-section section-padding" id="section_4">
                 <div class="container">
@@ -506,8 +503,8 @@ https://templatemo.com/tm-588-ebook-landing
                 </div>
             </section> -->
 
-
-            <section class="contact-section section-padding" id="section_5">
+            @guest
+            <section class="contact-section section-padding" id="section_4">
                 <div class="container">
                     <div class="row">
 
@@ -564,6 +561,7 @@ https://templatemo.com/tm-588-ebook-landing
                     </div>
                 </div>
             </section>
+            @endguest
         </main>
 
         <!-- JAVASCRIPT FILES -->

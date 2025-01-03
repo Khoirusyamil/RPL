@@ -8,19 +8,13 @@
             <a href="{{ url('admin/dashboard') }}" class="nav-link">Home</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{ url('admin/position') }}" class="nav-link">Position</a>
+            <a href="{{ url('admin/kalender') }}" class="nav-link">Kalender</a>
         </li>
+        <!-- <li class="nav-item d-none d-sm-inline-block">
+            <a href="{{ url('admin/employee') }}" class="nav-link">Note</a>
+        </li> -->
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{ url('admin/employee') }}" class="nav-link">Employee</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{ url('admin/book') }}" class="nav-link">Book</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{ url('admin/genre') }}" class="nav-link">Genre</a>
-        </li>
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="{{ url('admin/member') }}" class="nav-link">Member</a>
+            <a href="{{ url('admin/task') }}" class="nav-link">Task</a>
         </li>
         <!-- <li class="nav-item d-none d-sm-inline-block">
             <a href="{{ route('profile.edit') }}" class="nav-link">Profile</a>
@@ -53,18 +47,7 @@
         </li>
 
         <!-- Messages Dropdown Menu -->
-        <li class="nav-item dropdown">
-            <!-- Authentication -->
-            <form method="POST" action="{{ route('logout') }}">
-                @csrf
-                <a class="nav-link" data-toggle="dropdown" href="route('logout')"
-                    onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                    <i class="far fa-user"></i>
-                    <span class="badge badge-danger navbar-badge">Logout</span>
-                </a>
-            </form>
-        </li>
+        
         
         <li class="nav-item">
             <a class="nav-link" data-widget="fullscreen" href="#" role="button">

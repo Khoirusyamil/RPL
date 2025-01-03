@@ -19,8 +19,8 @@ class AdminMiddleware
     {
         if (Auth::check()) {
             if (Auth::user()->role == User::ROLE_ADMIN) {
-                return redirect(route('dashboard'));
-                // return $next($request);
+                // return redirect(route('dashboard'));
+                return $next($request);
             } elseif (Auth::user()->role == User::ROLE_USER) {
                 return redirect('/');
             }

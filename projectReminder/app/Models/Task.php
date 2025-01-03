@@ -10,3 +10,4 @@ class Task extends Model
     protected $fillable = ['id','name','email','nim','rombel','dokumen','keterangan']; 
     public $timestamps = false; 
 }
+

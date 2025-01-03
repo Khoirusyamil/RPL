@@ -41,7 +41,7 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ asset('assets/img/AdminLTELogo.png')}}" alt="AdminLTELogo" height="60"
+            <img class="animation__shake" src="{{ asset('assets/img/sb.png')}}" alt="AdminLTELogo" height="60"
                 width="60">
         </div>
 
@@ -58,9 +58,9 @@
         
         <!-- /.content-wrapper -->
         <footer class="main-footer">
-            <strong>Copyright &copy; 2024 <a href="#">Ahmad Fadillah Rivaldi</a>.</strong>
+            <strong>Copyright &copy; 2025 <a href="#">Study Buddy</a>.</strong>
             <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> BETA
+                <b>Version</b> 1.0
             </div>
         </footer>
 

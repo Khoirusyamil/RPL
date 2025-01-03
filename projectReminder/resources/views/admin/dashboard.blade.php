@@ -7,7 +7,7 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0">Dashboard</h1>
+                            <!-- <h1 class="m-0">Dashboard</h1> -->
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
@@ -28,6 +28,9 @@
                     <!-- /.row -->
                     <!-- Main row -->
                     <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center align-items-center" style="height: 80vh; margin">
+                            <img src="{{ asset('assets/img/sb.png') }}" alt="Gambar" class="img-fluid" style="width: 500px;">
+                        </div>
                         <!-- Left col -->
                         <section class="col-lg-7 connectedSortable">
                             <!-- Custom tabs (Charts with tabs)-->
